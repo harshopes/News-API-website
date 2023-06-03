@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/* NAVBAR */
+
+ul li{
+    list-style: none;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+nav img{
+    width: 120px;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px rgb(177, 175, 175);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-links ul{
+    gap: 20px;    
+}
+
+.hover-link{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: rgb(95, 129, 204);
+}
+.hover-link:active{
+    color: red;
+}
+
+.search-bar{
+    height: 37px;
+    gap: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.search-button{
+    padding: 3px 10px; 
+    border-radius: 5px;
+    background-color: rgb(255, 225, 58);  
+    border: 2px solid rgb(65, 65, 65);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.search-button:active {
+    background-color: rgb(255, 217, 0);  
+}
+.search-button:hover{
+    transform: scale(1.2);
+}
+
+.news-input{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(225, 225, 254);
+    padding-inline: 12px;
+    border-radius: 8px;
+    border: 2px solid rgb(65, 65, 65);
+}
+
+
+/* MAIN */
+
+main{
+    padding-block: 20px;
+    margin-top:120px;
+}
+
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card{
+    box-shadow: 0 0 4px rgb(81, 81, 81);
+}
