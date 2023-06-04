@@ -4,7 +4,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f3faff;
+    background: -webkit-linear-gradient(360deg, #f3faff 0%, #fcfcee 100%);
+    background: linear-gradient(360deg, #f3faff 0%, #fcfcee 100%);
+    font-family: "Poppins", sans-serif;
+    color: #577592;
+    background-size: cover;
 }
 .flex{
     display: flex;
@@ -17,6 +24,9 @@
 }
 p{
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+    color: #577592;
+    text-overflow: ellipsis;
 }
 /* NAVBAR */
 
@@ -39,6 +49,9 @@ nav{
     right: 0;
     z-index: 90;
 }
+.nav-item.active {
+    color: rgb(0, 81, 255);
+}
 
 .main-nav{
     justify-content: space-between;
@@ -55,7 +68,7 @@ nav{
 }
 
 .hover-link:hover{
-    color: rgb(95, 129, 204);
+    color: rgb(0, 81, 255);
 }
 .hover-link:active{
     color: red;
@@ -101,10 +114,22 @@ main{
 .card-container{
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 30px;
     align-items: start;
 }
 
 .card{
-    box-shadow: 0 0 4px rgb(81, 81, 81);
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+  }
